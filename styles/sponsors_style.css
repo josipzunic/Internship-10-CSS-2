@@ -24,11 +24,6 @@ h2{
     align-items: center;
 }
 .sponsores a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-a{
     text-decoration: none;
     display: flex;
     justify-content: center;
