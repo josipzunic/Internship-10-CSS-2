@@ -27,7 +27,6 @@
 
 .advertising-card:hover{
     transform: scale(1.04);
-    box-shadow: 0 12px 30px;
 }
 
 .card-body {

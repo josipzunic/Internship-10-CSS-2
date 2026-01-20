@@ -1,0 +1,61 @@
+.phone-img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+
+.sign-up-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 16px;
+}
+
+.phone-column {
+    display: flex;
+    justify-content: center;
+}
+
+.benefits-column {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 280px;
+}
+
+.information-title {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 36px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    padding-top: 0px;
+    text-align: left;
+}
+
+.icon-behind {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.behind-icon {
+    position: absolute;
+    top: 4px;
+    left: -20px;
+    width: 42px;
+    height: 42px;
+
+    z-index: 0;
+}
