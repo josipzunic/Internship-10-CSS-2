@@ -99,9 +99,6 @@
     font-weight: 800;
 }
 
-.timeline {
-    animation: scrollTimeline 40s linear infinite;
-}
 
 @keyframes scrollTimeline {
     from {
