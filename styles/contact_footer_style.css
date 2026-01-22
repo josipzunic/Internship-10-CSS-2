@@ -40,3 +40,34 @@
     width: 18px;
     height: 18px;
 }
+
+.footer-card {
+    background: #1b2a2d;
+    border-radius: 20px;
+    padding: 32px;
+    color: #ffffff;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: calc(100vw - 32px);
+    scroll-snap-align: start;
+}
+
+.footer-card span{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400px;
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.logos img{
+    height: 32px;
+    width: auto;
+}
