@@ -55,6 +55,7 @@ h3{
     line-height: 18px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    width: fit-content;
 }
 
 .supporter-title{
@@ -65,7 +66,8 @@ h3{
     letter-spacing: 0px;
     margin-top: 22px;
     position:relative;
-    display: inline-block;
+    display: inline-flex;
+    width: fit-content;
 }
 
 .supporter-title::after{
@@ -112,4 +114,61 @@ p{
     bottom: 2px;
     left: 5px;
     color: #FFFFFF;
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        max-width: none;
+    }
+
+    .supporters-wrapper {
+        gap: 160px;
+        padding: 0 120px;
+    }
+
+    .supporter-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 80px;
+
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .supporter-image img {
+        width: 100%;
+        height: auto;
+        max-height: 420px;
+        border-radius: 30px;
+        object-fit: cover;
+    }
+
+    .supporter-content {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .gold-sponsor-sign {
+        margin: 0;
+    }
+
+    .supporter-title {
+        margin: 0;
+    }
+
+
+}
+@media (min-width: 1024px) {
+
+    .supporter-card:nth-child(even) {
+        direction: rtl;
+    }
+
+    .supporter-card:nth-child(even) .supporter-content,
+    .supporter-card:nth-child(even) .supporter-image {
+        direction: ltr;
+    }
 }
