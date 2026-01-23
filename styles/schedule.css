@@ -1,0 +1,85 @@
+.schedule {
+    padding-top: 5rem;
+    padding-left: 1rem;
+}
+
+.schedule h2 {
+    color: var(--primary-text-color);
+    text-align: center;
+}
+
+.schedule-date {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--secondary-background-color);
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--secondary-background-color);
+    border-radius: 0.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 3.5rem;
+}
+
+.date > div:first-of-type {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.date:nth-of-type(2) {
+    background-color: var(--secondary-background-color);
+    color: black;
+}
+
+.date:hover {
+    cursor: pointer;
+}
+
+.date:nth-of-type(2):hover {
+    background-color: var(--on-hover-color);
+}
+
+.schedule-type-activities {
+    margin-top: 3rem;
+    max-width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.schedule-type-activities div {
+    border: 2px solid var(--primary-text-color);
+    color: var(--primary-text-color);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-radius: 2rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.schedule-type-activities div:first-of-type {
+    border: 2px solid var(--secondary-background-color);
+    color: var(--secondary-background-color);
+    
+}
+
+.schedule-type-activities div span {
+    padding-right: 0.5rem;
+    position: relative;
+    top: 0.1rem
+}
