@@ -1,11 +1,14 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DUMP Days 2021</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/sponsors_style.css" />
     <link rel="stylesheet" href="styles/advertisement_style.css" />
     <link rel="stylesheet" href="styles/sign_up_style.css">
@@ -14,6 +17,25 @@
 </head>
 
 <body>
+  <nav>
+        <div class="navbar-logo">
+            <img src="assets/Vector.svg" alt="Logo part one">
+            <img src="assets/Vector-2.svg" alt="Logo part two">
+        </div>
+        <input type="checkbox" id="navbar-menu-toggle">
+        <label class="navbar-hamburger" for="navbar-menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </label>
+        <div class="navbar-navigation">
+            <a href="">Konferencija</a>
+            <a href="">Raspored</a>
+            <a href="">Sponzori</a>
+            <a href="">Oglasna ploča</a>
+            <a href="">Kontakt</a>
+            <a href="" class="special-item">Prijava</a>
+        </div>
+    </nav>
     <h3>Podržavaju nas</h3>
     <div class="supporters-wrapper">
         <div class="supporter-card">
@@ -662,5 +684,4 @@
         </div>
     </footer>
 </body>
-
 </html>

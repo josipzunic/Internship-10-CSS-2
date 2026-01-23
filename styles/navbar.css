@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: "FuseV.2Display-Regular";
+    src: url("https://db.onlinewebfonts.com/t/452ec27decf4369db2b93619854b5638.eot");
+    src: url("https://db.onlinewebfonts.com/t/452ec27decf4369db2b93619854b5638.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/452ec27decf4369db2b93619854b5638.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/452ec27decf4369db2b93619854b5638.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/452ec27decf4369db2b93619854b5638.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/452ec27decf4369db2b93619854b5638.svg#FuseV.2Display-Regular")format("svg");
+    font-weight:normal;
+    font-style:normal;
+    font-display:swap;
+}
+
+:root {
+    --primary-text-color: white;
+    --on-hover-color: #31dfd0;
+    --primary-background-color: #0a181b;
+    --secondary-background-color: #30CEC2;
+    --primary-font: "FuseV.2Display-Regular";
+}
+
+body {
+    background-color: var(--primary-background-color);
+    font-family: var(--primary-font);
+}
+
+nav {
+    color: var(--primary-text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar-logo img:first-child {
+    transform: translate(100%, -35%);
+}
+
+.navbar-hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.navbar-hamburger div {
+    width: 25px;
+    height: 1.5px;
+    background-color: var(--primary-text-color);
+    transition: transform 0.3s ease;
+}
+
+.navbar-navigation {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%) translateY(-200%);
+    transition: transform 0.3s ease-in, opacity 5s ease-out;
+    background-color: var(--primary-background-color);
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .navbar-navigation {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    transition: transform 0.3s ease-out, opacity 0s linear;
+}
+
+input[type="checkbox"]:checked ~ .navbar-hamburger .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px);
+}
+
+input[type="checkbox"]:checked ~ .navbar-hamburger .bar:nth-child(2) {
+    transform: rotate(-45deg) translate(5px);
+}
+
+.special-item {
+    background-color: var(--secondary-background-color);
+    color: black;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.6rem;
+}
+
+.special-item:hover {
+    background-color: var(--on-hover-color);
+}
