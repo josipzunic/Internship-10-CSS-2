@@ -93,6 +93,9 @@
     bottom: 1.5rem;
     font-size: 1.1rem;
     font-weight: bold;
+    line-height: normal;
+    padding-top: 0;
+    text-align: left;
 }
 
 .activities-item p {
