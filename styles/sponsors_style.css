@@ -41,6 +41,11 @@ h2{
     height: auto;
 }
 
+.decorative-roller,
+.decorative-sphere{
+    display: none;
+}
+
 @media (min-width: 1024px){
     .sponsores-silver{
         grid-template-columns: repeat(5,1fr);
@@ -65,5 +70,28 @@ h2{
         row-gap: 0;
         max-width: fit-content;
         margin: 0 auto;
+    }
+
+    .sponsores-section{
+        position: relative;
+    }
+
+    .decorative-roller{
+        display: block;
+        position: absolute;
+        transform: translateY(-50%);
+        bottom: 35%;
+        width: 260px;
+        pointer-events: none;
+    }
+
+    .decorative-sphere{
+        display: block;
+        position: absolute;
+        transform: translateY(-50%);
+        bottom: 10%;
+        right: 0px;
+        width: 260px;
+        pointer-events: none;
     }
 }
