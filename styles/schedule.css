@@ -8,6 +8,10 @@
     text-align: center;
 }
 
+.schedule h4 {
+    color: var(--primary-text-color);
+}
+
 .schedule-date {
     margin-top: 3rem;
     display: flex;
@@ -58,8 +62,8 @@
 }
 
 .schedule-type-activities div {
-    border: 2px solid var(--primary-text-color);
-    color: var(--primary-text-color);
+    border: 2px solid var(--primary-text-color-opacity);
+    color: var(--primary-text-color-opacity);
     padding: 0.5rem 0.7rem 0.5rem 0.7rem;
     border-radius: 20px;
     white-space: nowrap;
@@ -80,7 +84,7 @@
 
 .schedule-card-container {
     padding-top: 2rem;
-    color: var(--primary-text-color);
+    color: var(--primary-text-color-opacity);
     font-weight: lighter;
     line-height: 1.5rem;
     display: flex;
@@ -136,6 +140,10 @@
     
     display: flex;
     gap: 1rem;
+}
+
+.schedule-card-presenter {
+    color: var(--primary-text-color);
 }
 
 .schedule-card-speaker-info div {

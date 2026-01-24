@@ -49,6 +49,10 @@
     color: var(--primary-text-color);
 }
 
+.introduction-text {
+    color: var(--primary-text-color-opacity);
+}
+
 .introduction> img:first-of-type {
     width: 100%;
 }
@@ -90,8 +94,8 @@
 .activities-item h3 {
     position: relative;
     left: 1.6rem;
-    bottom: 1.5rem;
-    font-size: 1.1rem;
+    bottom: 1.6rem;
+    font-size: 1.5rem;
     font-weight: bold;
     line-height: normal;
     padding-top: 0;
@@ -100,6 +104,7 @@
 
 .activities-item p {
     margin-left: 1rem;
+    color: var(--primary-text-color-opacity);
 }
 
 .activity-speaker {
