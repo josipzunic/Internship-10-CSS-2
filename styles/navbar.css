@@ -18,6 +18,7 @@
 
 :root {
     --primary-text-color: white;
+    --primary-text-color-opacity: rgba(255, 255, 255, 0.8);
     --on-hover-color: #31dfd0;
     --primary-background-color: #0a181b;
     --secondary-background-color: #30CEC2;
