@@ -1,13 +1,13 @@
-.advertising-board{
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc(100vw - 32px);
-    gap: 24px;
-    padding: 0 16px 16px;
+.advertising-board {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(100vw - 32px);
+  gap: 24px;
+  padding: 0 16px 16px;
 
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 
 .advertising-card {
@@ -19,14 +19,15 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: calc(100vw - 32px);;
+  width: calc(100vw - 32px);
+  ;
   scroll-snap-align: start;
 
   transition: transform 0.35 ease, box-shadow 0.35 ease;
 }
 
-.advertising-card:hover{
-    transform: scale(1.04);
+.advertising-card:hover {
+  transform: scale(1.04);
 }
 
 .card-body {
@@ -47,10 +48,10 @@
 }
 
 
-.card-title{
-    display:flex;
-    flex-direction: column;
-    gap: 0px;
+.card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
 }
 
 .job-title {
@@ -79,8 +80,8 @@
 }
 
 
-.more-about-job{
-    align-self: flex-start;
+.more-about-job {
+  align-self: flex-start;
 
   background: #30cec2;
   color: #0a181b;
@@ -90,4 +91,15 @@
 
   font-weight: 600;
   cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .advertising-board {
+    grid-auto-columns: 320px;
+    padding: 0 32px 32px;
+  }
+
+  .advertising-card {
+    width: 320px;
+  }
 }
