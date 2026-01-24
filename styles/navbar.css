@@ -44,10 +44,21 @@ nav a {
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
+    background: linear-gradient(var(--on-hover-color) 0 0) 
+    bottom left/
+    var(--underline-width, 0%) 0.25rem
+    no-repeat;
+    transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
 }
 
 .navbar-logo img:first-child {
     transform: translate(100%, -35%);
+}
+
+.navbar-logo img:nth-of-type(3) {
+    display: none;
 }
 
 .navbar-hamburger {
@@ -100,13 +111,51 @@ input[type="checkbox"]:checked ~ .navbar-hamburger .bar:nth-child(2) {
 .special-item {
     background-color: var(--secondary-background-color);
     color: black;
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 1.2rem 0.5rem 1.2rem;
     border-radius: 0.6rem;
 }
 
 .special-item:hover {
     background-color: var(--on-hover-color);
+}
+
+@media (min-width: 1024px) {
+    .navbar-hamburger {
+        display: none;
+    }
+
+    .navbar-navigation {
+        opacity: 1;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        position: static;
+        justify-content: center;
+        align-items: center;
+        left: auto;
+        top: auto;
+        transform: none;
+        transition: none;
+        background-color: var(--primary-background-color);
+    }
+
+    .navbar-navigation a:nth-of-type(4),
+    .navbar-navigation a:nth-of-type(6) {
+        display: none;
+    }
+
+    .navbar-logo img:nth-of-type(1),
+    .navbar-logo img:nth-of-type(2) {
+        display: none;
+    }
+
+    .navbar-logo img:nth-of-type(3) {
+        display: block;
+    }
+
+    nav a:hover {
+        --underline-width: 100%;
+        
+    }
+
 }
