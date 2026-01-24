@@ -1,14 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif; /*Fuse V.2 Display nema?*/
 
-}
-
-body{
-    margin: 0;
-    max-width: 375px;
-    margin-inline: auto;
-    background-color: #0A181B;
 }
 
 h3{
@@ -87,7 +79,7 @@ h3{
     transform: scaleX(1);
 }
 
-p{
+.supporter-content p{
     line-height: 24px;
     font-size: 16px;
     font-weight: 400px;
