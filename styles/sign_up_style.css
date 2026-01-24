@@ -74,3 +74,38 @@
         transform: translateX(0);
     }
 }
+@media (min-width: 1024px) {
+
+    h3 {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .sign-up-wrap {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        gap: 120px;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 64px;
+    }
+
+    .benefits-column {
+        flex: 0 0 520px;
+        max-width: 520px;
+        margin: 0;
+    }
+
+    .phone-column {
+        position: sticky;
+        top: 120px;
+        align-self: flex-start;
+    }
+
+    .phone-img {
+        position: relative;
+        max-width: 420px;
+        width: 100%;
+    }
+}
