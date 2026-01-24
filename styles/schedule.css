@@ -79,7 +79,7 @@
 }
 
 .schedule-card-container {
-    padding-top: 4rem;
+    padding-top: 2rem;
     color: var(--primary-text-color);
     font-weight: lighter;
     line-height: 1.5rem;
@@ -87,10 +87,18 @@
     flex-direction: column;
 }
 
+.schedule-card-general-info {
+    padding: 1.5rem 0rem 1.5rem 1rem;
+}
+
 .schedule-card {
     display: flex;
     flex-direction: column;
     padding-right: 1rem;
+}
+
+.schedule-card + .schedule-card {
+    padding-top: 1rem;
 }
 
 .schedule-card-title {
@@ -125,7 +133,7 @@
 }
 
 .schedule-card-speaker-info {
-    padding-top: 2rem;
+    
     display: flex;
     gap: 1rem;
 }
