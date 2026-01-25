@@ -112,7 +112,9 @@ input[type="checkbox"]:checked ~ .navbar-hamburger .bar:nth-child(2) {
     background-color: var(--secondary-background-color);
     color: black;
     padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+    border: 1px solid var(--secondary-background-color);
     border-radius: 0.6rem;
+    cursor: pointer;
 }
 
 .special-item:hover {
@@ -151,6 +153,7 @@ input[type="checkbox"]:checked ~ .navbar-hamburger .bar:nth-child(2) {
 
     .navbar-logo img:nth-of-type(3) {
         display: block;
+        width: 80%;
     }
 
     nav a:hover {

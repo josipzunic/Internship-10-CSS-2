@@ -16,18 +16,31 @@
     font-size: 1.3rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.main-title-buttons div:nth-of-type(2) {
+    display: none;
+}
+
+.main-title-buttons {
+    display: flex;
 }
 
 .main-title-text {
-    margin-left: 1rem;
+    padding-left: 1rem;
 }
 
 .main-title-subtext {
-    margin-left: 1rem;
     margin-top: 1rem;
     font-weight: lighter;
     font-size: 1rem;
     align-self: flex-start;
+    margin-left: 1rem;
+}
+
+.live-lecture {
+    display: none;
 }
 
 .overview {
@@ -113,4 +126,97 @@
 
 .activity-icon {
     width: 2.3rem;
+}
+
+@media (min-width: 1024px) {
+    .main-title-text {
+        font-size: clamp(1.6rem, 2.2vw, 2.2rem);
+        position: relative;
+        bottom: 110px;
+    }
+    
+    .main-title-subtext {
+        margin-left: 1rem;
+        margin-top: 1rem;
+        font-weight: lighter;
+        font-size: 1rem;
+        position: relative;
+        bottom: 100px;
+
+    }
+
+    .main-title-buttons div:nth-of-type(2) {
+        display: inline;
+        background-color: var(--primary-background-color);
+        color: var(--primary-text-color);
+        border: 1px solid var(--primary-text-color);
+    }
+
+    .special-item {
+        padding: 0.7rem 1.3rem 0.7rem 1.3rem;
+    }
+
+    .main-title-subtext {
+        font-size: 1.1rem;
+    }
+
+    .mood-sampler img {
+        display: none;
+    }
+
+    .main-title {
+        background-image: url("../assets/header.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 900px;
+    }
+
+    .live-lecture {
+        display: flex;
+        gap: 1rem;
+        background-color: #1b2325;
+        padding: 3rem;
+        border-radius: 20px;
+        align-items: center;
+        width: fit-content;
+        margin-left: 1rem;
+        line-height: 1.2rem;
+        position: relative;
+        top: 15rem;
+    }
+
+    .live-lecture-overview {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .live-lecture-overview div:nth-of-type(1) {
+        font-size: 1rem;
+    }
+
+    .live-lecture-overview div:nth-of-type(2) {
+        font-size: 0.8rem;
+    }
+
+    .live-lecture-overview  div:nth-of-type(1) span {
+        border: 1px solid rgb(174, 16, 16);
+        border-radius: 10px;
+        color: rgb(174, 16, 16);
+        padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .live-lecture-overview div:nth-of-type(2) span {
+        color: var(--primary-text-color-opacity);
+    }
+
+    .watch-lecture {
+        border: 1px solid white;
+        padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+        border-radius: 20px;
+        font-size: 1rem;
+        margin-left: 2rem;
+    }
 }
