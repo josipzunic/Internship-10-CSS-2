@@ -19,6 +19,22 @@
     justify-content: center;
 }
 
+.animated-word {
+    border-right: 2px solid var(--on-hover-color);
+    padding-right: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    font-weight: bold;
+    animation: blink-cursor 0.7s steps(1) infinite;
+}
+
+@keyframes blink-cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
 .main-title-buttons div:nth-of-type(2) {
     display: none;
 }
@@ -66,8 +82,52 @@
     color: var(--primary-text-color-opacity);
 }
 
-.introduction> img:first-of-type {
-    width: 100%;
+.intro-image {
+    position: relative;
+    width: calc(100% - 2rem);
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.intro-image img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40rem;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fade 7s infinite;
+    border-radius: 60px; 
+}
+
+.intro-image img:nth-of-type(1) {
+    animation-delay: 0s;
+}
+
+.intro-image img:nth-of-type(2) {
+    animation-delay: 3.5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .introduction-title {
@@ -97,7 +157,15 @@
 }
 
 .activities-text-group {
-    display: contents;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.activities-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .activities-item {
@@ -129,6 +197,42 @@
 
 .activity-icon {
     width: 2.3rem;
+}
+
+.activities > div:nth-child(1) {
+    order: 0;
+}
+
+.activities > div:nth-child(2) {
+    order: -1;
+}
+
+.activities > div:nth-child(3) {
+    order: 1;
+}
+
+.activities > div:nth-child(4) {
+    order: 2;
+}
+
+@keyframes slide-in-left-mobile {
+    0% { opacity: 0; transform: translateX(-20px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slide-in-right-mobile {
+    0% { opacity: 0; transform: translateX(20px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.activities-text-group:first-of-type .activities-item {
+    animation: slide-in-left-mobile 2s ease-out forwards;
+    transform: translateZ(0);
+}
+
+.activities-text-group:last-of-type .activities-item {
+    animation: slide-in-right-mobile 2s ease-out forwards;
+    transform: translateZ(0);
 }
 
 .new-info {
@@ -239,13 +343,13 @@
         margin-left: 2rem;
     }
 
-    .introduction> img:first-of-type {
-        width: 50%;
-        height: 400px;
-        object-fit: cover;
-        align-self: center;
-        margin-left: -15rem;
-        border-radius: 30px;
+    .intro-image {
+        width: 60%;
+        border-radius: 60px; 
+    }
+
+    .intro-image img {
+        transform: translateX(-30rem);
     }
 
     .introduction{
@@ -279,6 +383,13 @@
        width: 40%;
        margin-right: 13rem;
        line-height: 1.5rem;
+    }
+
+    .activities > div:nth-child(1),
+    .activities > div:nth-child(2),
+    .activities > div:nth-child(3),
+    .activities > div:nth-child(4) {
+        order: 0;
     }
 
     .activities {
@@ -334,6 +445,38 @@
         top: 0.7rem;
     }
 
+    @keyframes slide-in-left {
+        0% {
+            opacity: 0;
+            transform: translateX(-70px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    @keyframes slide-in-right {
+        0% {
+            opacity: 0;
+            transform: translateX(70px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    .activities > .activities-text-group:first-child {
+        animation: slide-in-left 2s ease-out forwards;
+        transform: translateZ(0);
+    }
+    
+    .activities > .activities-text-group:last-child {
+        animation: slide-in-right 2s ease-out forwards;
+        transform: translateZ(0);
+    }
+
     .new-info {
         display: flex;
         flex-direction: column;
@@ -356,6 +499,14 @@
     .new-info-item {
         width: 40%;
         padding-top: 4rem;
+    }
+
+    .new-info-item:nth-of-type(1) {
+        animation: slide-in-left 2s ease-out forwards;
+    }
+
+    .new-info-item:nth-of-type(2) {
+        animation: slide-in-right 2s ease-out forwards;
     }
 
     .content-on-display {

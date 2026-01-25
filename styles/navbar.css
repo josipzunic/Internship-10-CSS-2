@@ -84,14 +84,17 @@ nav a {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    position: absolute;
+    position: fixed;
     justify-content: center;
     align-items: center;
     left: 50%;
     top: 15%;
+    width: 100vw;
+    height: 100vh;
     transform: translateX(-50%) translateY(-200%);
     transition: transform 0.3s ease-in, opacity 5s ease-out;
     background-color: var(--primary-background-color);
+    z-index: 1;
 }
 
 input[type="checkbox"] {
@@ -148,6 +151,8 @@ input[type="checkbox"]:checked ~ .navbar-hamburger .bar:nth-child(2) {
         transform: none;
         transition: none;
         background-color: var(--primary-background-color);
+        width: auto;
+        height: auto;
     }
 
     .navbar-navigation a:nth-of-type(4),
