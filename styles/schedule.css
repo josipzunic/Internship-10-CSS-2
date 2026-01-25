@@ -6,10 +6,12 @@
 .schedule h2 {
     color: var(--primary-text-color);
     text-align: center;
+    font-size: 2rem;
 }
 
 .schedule h4 {
     color: var(--primary-text-color);
+    margin-bottom: 0.5rem;
 }
 
 .schedule-date {
@@ -137,20 +139,114 @@
 }
 
 .schedule-card-speaker-info {
-    
     display: flex;
     gap: 1rem;
 }
 
 .schedule-card-presenter {
-    color: var(--primary-text-color);
+    color: var(--primary-text-color-opacity);
 }
 
-.schedule-card-speaker-info div {
+.schedule-card-speaker-info {
     display: flex;
     flex-direction: column;
 }
 
+.profile-image {
+    padding-left: 4rem;
+}
+
+.speaker-info-name-image {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
 .schedule-card-speaker-info div span:nth-of-type(2) {
     padding-top: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .schedule {
+        margin-left: 11rem;
+        margin-right: 11rem;
+    }
+
+    .schedule-type-activities {
+        justify-content: center;
+    }
+
+    .schedule-type-activities div:hover {
+        cursor: pointer;
+        color: var(--secondary-background-color);
+        border-color: var(--secondary-background-color);
+    }
+
+    .schedule-card-general-info {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .schedule-card-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .schedule-content-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-right: 3rem;
+    }
+
+    .schedule-content-time p {
+        width: 6rem
+    }
+
+    .schedule-content-time span {
+        display: none;
+    }
+
+    .schedule-card-title h4 span {
+        background-color: var(--secondary-background-color);
+        font-size: 0.7rem;
+        color: black;
+        font-weight: bold;
+        padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+        border-radius: 6px;
+        line-height: normal;
+        vertical-align: middle;
+    }
+
+    .schedule-card-speaker-info {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .speaker-info-name-image {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem
+    }
+
+    .schedule-card-title {
+        justify-content: unset;
+        gap: 1rem;
+    }
+    
+    .profile-image {
+        padding-left: 0rem;
+    }
+
+    .schedule-card-title h4 span:nth-of-type(2) {
+        border: 1px solid rgb(174, 16, 16);
+        border-radius: 10px;
+        color: rgb(174, 16, 16);
+        padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+        font-size: 0.8rem;
+        vertical-align: middle;
+        background-color: #162426;
+    }
 }
