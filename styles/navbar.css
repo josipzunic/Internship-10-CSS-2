@@ -28,6 +28,7 @@
 body {
     background-color: var(--primary-background-color);
     font-family: var(--primary-font);
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -122,6 +123,11 @@ input[type="checkbox"]:checked ~ .navbar-hamburger .bar:nth-child(2) {
 }
 
 @media (min-width: 1024px) {
+    nav {
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
+
     .navbar-hamburger {
         display: none;
     }

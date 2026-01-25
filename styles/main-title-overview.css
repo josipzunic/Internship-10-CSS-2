@@ -133,6 +133,7 @@
         font-size: clamp(1.6rem, 2.2vw, 2.2rem);
         position: relative;
         bottom: 110px;
+        padding-left: 6rem;
     }
     
     .main-title-subtext {
@@ -142,7 +143,14 @@
         font-size: 1rem;
         position: relative;
         bottom: 100px;
+    }
 
+    .main-title-subtext p {
+        padding-left: 5rem;
+    }
+
+    .main-title-buttons {
+        padding-left: 5rem;
     }
 
     .main-title-buttons div:nth-of-type(2) {
@@ -180,7 +188,7 @@
         border-radius: 20px;
         align-items: center;
         width: fit-content;
-        margin-left: 1rem;
+        margin-left: 5rem;
         line-height: 1.2rem;
         position: relative;
         top: 15rem;
