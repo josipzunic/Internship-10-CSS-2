@@ -227,4 +227,46 @@
         font-size: 1rem;
         margin-left: 2rem;
     }
+
+    .introduction> img:first-of-type {
+        width: 50%;
+        height: 400px;
+        object-fit: cover;
+        align-self: center;
+        margin-left: -15rem;
+        border-radius: 30px;
+    }
+
+    .introduction{
+        justify-content: initial;
+        align-items: flex-end;
+    }
+
+    .introduction-title {
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 2rem;
+        width: 40%;
+        margin-right: 13rem;
+    }
+
+    .introduction-title img {
+        align-self: flex-end;
+        order: -1;
+        width: 4rem;
+        position: relative;
+        bottom: 5rem;
+        right: 2.6rem;
+    }
+
+    .introduction-title h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }      
+
+    .introduction-text {
+       width: 40%;
+       margin-right: 13rem;
+       line-height: 1.5rem;
+    }
 }
