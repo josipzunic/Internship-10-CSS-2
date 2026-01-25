@@ -19,22 +19,6 @@
     justify-content: center;
 }
 
-.animated-word {
-    border-right: 2px solid var(--on-hover-color);
-    padding-right: 2px;
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    font-weight: bold;
-    animation: blink-cursor 0.7s steps(1) infinite;
-}
-
-@keyframes blink-cursor {
-    50% {
-        border-color: transparent;
-    }
-}
-
 .main-title-buttons div:nth-of-type(2) {
     display: none;
 }

@@ -1,0 +1,110 @@
+.animated-word {
+    color: var(--secondary-background-color);
+}
+
+.animated-word::before {
+    content: '';
+    animation: typewriter 12s infinite;
+    display: inline;
+    border-right: 2px solid white;
+    vertical-align: baseline;
+}
+
+@keyframes typewriter {
+    0% { content: ''; }
+    2% { content: 'd'; }
+    4% { content: 'de'; }
+    6% { content: 'dev'; }
+    8% { content: 'deve'; }
+    10% { content: 'devel'; }
+    12% { content: 'develo'; }
+    14% { content: 'develop'; }
+    16% { content: 'develope'; }
+    18% { content: 'developer'; }
+    20% { content: 'developera'; }
+    22%, 23% { content: 'developera'; }
+    24% { content: 'developer'; }
+    25% { content: 'develope'; }
+    26% { content: 'develop'; }
+    27% { content: 'develo'; }
+    28% { content: 'devel'; }
+    29% { content: 'deve'; }
+    30% { content: 'dev'; }
+    31% { content: 'de'; }
+    32% { content: 'd'; }
+    33% { content: ''; }
+    35% { content: 'd'; }
+    36% { content: 'di'; }
+    37% { content: 'diz'; }
+    38% { content: 'diza'; }
+    39% { content: 'dizaj'; }
+    40% { content: 'dizajn'; }
+    41% { content: 'dizajne'; }
+    42% { content: 'dizajner'; }
+    43% { content: 'dizajnera'; }
+    44%, 46% { content: 'dizajnera'; }
+    47% { content: 'dizajner'; }
+    48% { content: 'dizajne'; }
+    49% { content: 'dizajn'; }
+    50% { content: 'dizaj'; }
+    51% { content: 'diza'; }
+    52% { content: 'diz'; }
+    53% { content: 'di'; }
+    54% { content: 'd'; }
+    55% { content: ''; }
+    57% { content: 'm'; }
+    58% { content: 'ma'; }
+    59% { content: 'mar'; }
+    60% { content: 'mark'; }
+    61% { content: 'marke'; }
+    62% { content: 'market'; }
+    63% { content: 'marketi'; }
+    64% { content: 'marketin'; }
+    65% { content: 'marketing'; }
+    66% { content: 'marketinga'; }
+    67% { content: 'marketingaš'; }
+    68% { content: 'marketingaša'; }
+    69%, 71% { content: 'marketingaša'; }
+    72% { content: 'marketingaš'; }
+    73% { content: 'marketinga'; }
+    74% { content: 'marketing'; }
+    75% { content: 'marketin'; }
+    76% { content: 'marketi'; }
+    77% { content: 'market'; }
+    78% { content: 'marke'; }
+    79% { content: 'mark'; }
+    80% { content: 'mar'; }
+    81% { content: 'ma'; }
+    82% { content: 'm'; }
+    83% { content: ''; }
+    85% { content: 'p'; }
+    86% { content: 'po'; }
+    87% { content: 'pod'; }
+    88% { content: 'podu'; }
+    89% { content: 'poduz'; }
+    90% { content: 'poduzet'; }
+    91% { content: 'poduzetn'; }
+    92% { content: 'poduznetni'; }
+    93% { content: 'poduzetnik'; }
+    94% { content: 'poduzetnika'; }
+    95%, 96% { content: 'poduzetnika'; }
+    97% { content: 'poduzetnik'; }
+    97.5% { content: 'poduznetni'; }
+    98% { content: 'poduzetn'; }
+    98.3% { content: 'poduzet'; }
+    98.6% { content: 'poduz'; }
+    98.8% { content: 'podu'; }
+    99% { content: 'pod'; }
+    99.3% { content: 'po'; }
+    99.6% { content: 'p'; }
+    100% { content: ''; }
+}
+
+@keyframes blink {
+    0%, 50% { border-color: var(--secondary-background-color); }
+    51%, 100% { border-color: transparent; }
+}
+
+.animated-word::before {
+    animation: typewriter 12s infinite, blink 0.8s infinite;
+}
